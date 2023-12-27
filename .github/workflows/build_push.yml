@@ -612,8 +612,8 @@ jobs:
           asset_name: esp32_marauder.multiboardS3.bin
           asset_content_type: application/bin
         if: github.event_name != 'pull_request'
-      - name: Upload MultiboardS3 Asset
-        id: upload-multiboardS3-release-asset 
+      - name: Upload T_Deck Asset
+        id: upload-t-deck-release-asset 
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
