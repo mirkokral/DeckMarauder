@@ -1,6 +1,5 @@
 // ST7789 240 x 280 display with no chip select line
-#define USER_SETUP_ID 210
-
+#define VSPI SPI2_HOST
 #define ST7789_DRIVER     // Configure all registers
 
 #define TFT_WIDTH  240
@@ -12,7 +11,7 @@
 #define TFT_RGB_ORDER TFT_BGR  // Colour order Blue-Green-Red
 
 // #define TFT_INVERSION_ON
-// #define TFT_INVERSION_OFF  //For the first sample of T-Deck need to turn on color inversion
+#define TFT_INVERSION_OFF  //For the first sample of T-Deck need to turn on color inversion
 
 // DSTIKE stepup
 //#define TFT_DC    23
